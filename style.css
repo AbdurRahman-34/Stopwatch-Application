@@ -61,11 +61,16 @@ body{
     cursor: pointer;
 }
 .buttons button.start{
-    color: #C32457;
+    color: #a81846;
 }
 .buttons button.stop{
     color: #C7BB00;
 }
 .buttons button.reset{
     color: #12C245;
+}
+.buttons button.stopActive,
+.buttons button.active{
+    cursor: not-allowed;
+    opacity: 0.8;
 }
