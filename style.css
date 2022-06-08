@@ -16,6 +16,16 @@ body{
     justify-content: center;
     background-color: #202938;
 }
+.watch-heading h2{
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 5px;
+    text-shadow: 1px 1px 5px #ac99ff,
+    -2px 1px 30px #7c5ada;
+}
 #wrapper{
     user-select: none;
 }
@@ -74,3 +84,22 @@ body{
     cursor: not-allowed;
     opacity: 0.8;
 }
+
+/* =============================
+        MMedia querie
+================================*/
+@media (min-width: 320px) and (max-width: 480px) {
+    #wrapper {
+        user-select: none;
+        width: 90%;
+    }
+    #wrapper .time span {
+        width: 44px;
+    }
+    .buttons button {
+        margin: 0px 16px 16px;
+    }
+    .watch-heading h2 {
+        font-size: 25px;
+    }
+  }

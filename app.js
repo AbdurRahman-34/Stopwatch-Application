@@ -49,6 +49,9 @@ function stop(){
 function reset(){
     startBtn.classList.remove("active");
     stopBtn.classList.remove("stopActive");
+    clearInterval(startTimer);
+    let hr = min = sec = ms = "0" + 0;
+    putValue();
 }
 
 
@@ -57,5 +60,6 @@ function putValue(){
     document.querySelector(".millisecond").innerText = ms;
     document.querySelector(".second").innerText = sec;
     document.querySelector(".minute").innerText = min;
+    document.querySelector(".hour").innerText = hr;
     
 }
